@@ -11,4 +11,17 @@
     </parent>
 
     <artifactId>laxio-server</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.laxio</groupId>
+            <artifactId>laxio-api</artifactId>
+            <version>1.13.2-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.laxio</groupId>
+            <artifactId>laxio-protocol-basic</artifactId>
+            <version>1.13.2-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>
