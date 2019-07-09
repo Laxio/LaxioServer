@@ -1,6 +1,6 @@
 package org.laxio.server;
 
-import org.laxio.LaxioApplication;
+import org.laxio.Application;
 import org.laxio.network.NetworkServer;
 import org.laxio.protocol.netty.server.LaxioServerNettyServer;
 import org.laxio.server.network.NetworkServerBuilder;
@@ -8,7 +8,6 @@ import org.laxio.util.Conditions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.net.InetAddress;
 import java.net.InetSocketAddress;
 
 public class LaxioServerBuilder {
@@ -58,7 +57,7 @@ public class LaxioServerBuilder {
     private final class LaxioServerBuilderNetworkServerBuilder implements NetworkServerBuilder {
 
         @Override
-        public NetworkServer build(LaxioApplication application) {
+        public NetworkServer build(Application application) {
             return new LaxioServerNettyServer(application, address);
         }
 

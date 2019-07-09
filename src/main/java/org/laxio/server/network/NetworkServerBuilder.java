@@ -1,10 +1,10 @@
 package org.laxio.server.network;
 
-import org.laxio.LaxioApplication;
+import org.laxio.Application;
 import org.laxio.network.NetworkServer;
 
 public interface NetworkServerBuilder {
 
-    NetworkServer build(LaxioApplication application);
+    NetworkServer build(Application application);
 
 }
